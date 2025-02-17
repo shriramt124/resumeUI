@@ -4,6 +4,8 @@ import Dashboard from './Dashboard';
 
 const MainContent = () => {
   return (
+    <> 
+     
     <div className="flex-1 overflow-auto">
       <header className="bg-white border-b border-gray-200 px-6 py-4">
         <div className="flex items-center justify-between">
@@ -22,13 +24,15 @@ const MainContent = () => {
         </div>
       </header>
       
-      <main className="p-6">
+        <main className="p-6">
+          
         <Routes>
           <Route path="/" element={<Dashboard />} />
           {/* Add other routes as needed */}
         </Routes>
       </main>
-    </div>
+      </div>
+    </>
   );
 };
 
